@@ -1,0 +1,39 @@
+================================================================================== test session starts ===================================================================================
+platform darwin -- Python 3.7.1, pytest-5.0.0, py-1.8.0, pluggy-0.12.0 -- /Users/z0031jl/.virtualenvs/nextbus-target/bin/python3
+cachedir: .pytest_cache
+rootdir: /Users/z0031jl/Documents/Git/PublicGitHub/nextbus-target
+plugins: cov-2.7.1
+collected 24 items
+
+test_nextbus.py::NextBusFunctionalTest::test_run_all_valid PASSED                                                                                                                  [  4%]
+test_nextbus.py::NextBusFunctionalTest::test_run_invalid_direction PASSED                                                                                                          [  8%]
+test_nextbus.py::NextBusFunctionalTest::test_run_invalid_direction_wrong PASSED                                                                                                    [ 12%]
+test_nextbus.py::NextBusFunctionalTest::test_run_invalid_route PASSED                                                                                                              [ 16%]
+test_nextbus.py::NextBusFunctionalTest::test_run_invalid_route_ambiguous PASSED                                                                                                    [ 20%]
+test_nextbus.py::NextBusFunctionalTest::test_run_invalid_stop PASSED                                                                                                               [ 25%]
+test_nextbus.py::NextBusFunctionalTest::test_run_invalid_stop_ambiguous PASSED                                                                                                     [ 29%]
+test_nextbus.py::NextBusGetTests::test_get_json_exception PASSED                                                                                                                   [ 33%]
+test_nextbus.py::NextBusGetTests::test_get_request_exception PASSED                                                                                                                [ 37%]
+test_nextbus.py::NextBusUnitTests::test_cache_force_reset PASSED                                                                                                                   [ 41%]
+test_nextbus.py::NextBusUnitTests::test_cache_hit PASSED                                                                                                                           [ 45%]
+test_nextbus.py::NextBusUnitTests::test_cache_miss PASSED                                                                                                                          [ 50%]
+test_nextbus.py::NextBusUnitTests::test_cache_no_return PASSED                                                                                                                     [ 54%]
+test_nextbus.py::NextBusUnitTests::test_get_time_remaining_no_data PASSED                                                                                                          [ 58%]
+test_nextbus.py::NextBusUnitTests::test_is_valid_direction_not_direction PASSED                                                                                                    [ 62%]
+test_nextbus.py::NextBusUnitTests::test_is_valid_direction_not_for_route PASSED                                                                                                    [ 66%]
+test_nextbus.py::NextBusUnitTests::test_is_valid_direction_true PASSED                                                                                                             [ 70%]
+test_nextbus.py::NextBusUnitTests::test_run_ambiguous_route PASSED                                                                                                                 [ 75%]
+test_nextbus.py::NextBusUnitTests::test_run_ambiguous_stop PASSED                                                                                                                  [ 79%]
+test_nextbus.py::NextBusUnitTests::test_run_bad_time PASSED                                                                                                                        [ 83%]
+test_nextbus.py::NextBusUnitTests::test_run_invalid_direction PASSED                                                                                                               [ 87%]
+test_nextbus.py::NextBusUnitTests::test_run_invalid_route PASSED                                                                                                                   [ 91%]
+test_nextbus.py::NextBusUnitTests::test_run_invalid_stop PASSED                                                                                                                    [ 95%]
+test_nextbus.py::NextBusUnitTests::test_run_success PASSED                                                                                                                         [100%]
+
+---------- coverage: platform darwin, python 3.7.1-final-0 -----------
+Name         Stmts   Miss Branch BrPart  Cover   Missing
+--------------------------------------------------------
+nextbus.py     127      2     36      1    98%   210-211, 209->210
+
+
+=============================================================================== 24 passed in 1.83 seconds ================================================================================
